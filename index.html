@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TravelEarn India</title>
+  <!-- Make sure style.css is in the same folder as index.html -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,17 +17,16 @@
       <li><a href="#earn">Earn</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      <button  onclick="window.location.href='logIn.html'" style="color:#fff7ff;font-size:15px; text-decoration: none;margin-top:15px;font-size: large;" class="sign-in-btn glow-btn">Sign In</button>
+      <li><button onclick="window.location.href='logIn.html'" class="sign-in-btn glow-btn">Sign In</button></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-overlay"></div>
     <h1 class="glow-text">Travel. Explore. Earn.</h1>
     <p class="hero-subtext">Discover India while earning through unique travel opportunities.</p>
     <button class="btn glow-btn">Start Your Journey</button>
-    <button  onclick="window.location.href='logIn.html'" style="color:#fff7ff;font-size:15px; text-decoration: none;margin-top:15px;font-size: large;" class="sign-in-btn glow-btn">Sign In</button>
+    <button onclick="window.location.href='logIn.html'" class="sign-in-btn glow-btn">Sign In</button>
   </section>
 
   <!-- Jobs Section -->
@@ -37,19 +37,28 @@
         <h3>Tour Guide Assistant</h3>
         <p>Location: Raebareli</p>
         <p>Duration: 2 weeks</p>
-         <button style="margin-top:30px;color:#fff7ff;font-size: 15px; text-decoration: none;" href="https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header'" class="btn glow-btn">Apply Now </button>
+        <button class="btn glow-btn" style="margin-top:30px;font-size:15px;"
+          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header', '_blank')">
+          Apply Now
+        </button>
       </div>
       <div class="job-card">
         <h3>Photography Intern</h3>
         <p>Location: Raebareli</p>
         <p>Duration: 1 month</p>
-         <button style="margin-top:30px;color:#fff7ff;font-size: 15px; text-decoration: none;" href="https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header'" class="btn glow-btn">Apply Now </button>
+        <button class="btn glow-btn" style="margin-top:30px;font-size:15px;"
+          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header', '_blank')">
+          Apply Now
+        </button>
       </div>
       <div class="job-card">
         <h3>Hotel Helper</h3>
         <p>Location: Raebareli</p>
         <p>Duration: 3 weeks</p>
-        <button style="margin-top:30px;color:#fff7ff;font-size: 15px; text-decoration: none;" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header'" class="btn glow-btn">Apply Now </button>
+        <button class="btn glow-btn" style="margin-top:30px;font-size:15px;"
+          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeIbAla2Lylf5UFLbctdVJeI-G7N4gdbKVHbBWL45SeYDtF3Q/viewform?usp=header', '_blank')">
+          Apply Now
+        </button>
       </div>
     </div>
   </section>
@@ -84,7 +93,11 @@
       <div class="about-card">🏕️</div>
     </div>
     <h3>Want To Explore All India And Feel Difficulties</h3>
-    <button style="color:#fff7ff;font-size: 15px; text-decoration: none;" onclick="window.location.href='https://newlisting-13.onrender.com/listings'" class="sign-in-btn" >Click Here</button>
+    <!-- Use HTTPS for Render link -->
+    <button class="sign-in-btn" style="font-size:15px;"
+      onclick="window.open('https://newlisting-13.onrender.com/listings', '_blank')">
+      Click Here
+    </button>
   </section>
 
   <!-- Contact Section -->
@@ -100,3 +113,4 @@
 
 </body>
 </html>
+
